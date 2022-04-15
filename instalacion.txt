@@ -1,0 +1,17 @@
+[REQUISITOS]
+
+python 3.9
+
+[Librerias]
+
+pytorch 1.10.2
+opencv  4.5.5.62
+pipwin  
+pipwin install pyaudio
+pyaudio
+pygame
+torchaudio
+omegaconf
+PySoundFile [Windows]
+sox [Linux]
+noisereduce
