@@ -1,5 +1,23 @@
 #include <UTFT.h> 
 
+#ifdef __arm__
+// should use uinstd.h to define sbrk but Due causes a conflict
+extern "C" char* sbrk(int incr);
+#else  // __ARM__
+extern char *__brkval;
+#endif  // __arm__
+
+int freeMemory() {
+  char top;
+#ifdef __arm__
+  return &top - reinterpret_cast<char*>(sbrk(0));
+#elif defined(CORE_TEENSY) || (ARDUINO > 103 && ARDUINO != 151)
+  return &top - __brkval;
+#else  // __arm__
+  return __brkval ? &top - __brkval : &top - __malloc_heap_start;
+#endif  // __arm__
+}
+
 // 320x240
 
 UTFT myGLCD(ILI9341_16,38,39,40,41);
@@ -11,7 +29,7 @@ const unsigned char corazon [] PROGMEM = { 94, 136, 0, 0, 1, 7, 25, 10, 30, 25, 
 
 unsigned char *animacion;
 unsigned char n_frames;
-unsigned char *lista_cambios;
+unsigned char lista_cambios[120];
 unsigned int last;
 unsigned int actual_frame;
 unsigned char* lista_animaciones[8];
@@ -19,7 +37,7 @@ unsigned char* lista_animaciones[8];
 void setup() {
 
   // Animaciones
- 
+  Serial.begin(9600);
   // Preparando pantalla
   myGLCD.InitLCD();
   myGLCD.clrScr();
@@ -29,19 +47,13 @@ void setup() {
   
   load_new_animation(enfadado);
 
-  // Preparando los pins
-  pinMode(8, INPUT);
-  pinMode(9, INPUT);
-  pinMode(10, INPUT);
 }
 
 inline void load_new_animation(unsigned char* newAnimation) {
   myGLCD.clrScr();
   free(animacion);
-  free(lista_cambios);
   animacion = newAnimation;
   n_frames = pgm_read_byte_near(animacion);
-  lista_cambios = malloc(n_frames);
   for (int i = 0; i < n_frames; i++) {
     lista_cambios[i] = pgm_read_byte_near(animacion + 1 + i);
   }
@@ -49,29 +61,37 @@ inline void load_new_animation(unsigned char* newAnimation) {
   actual_frame = 0;
 }
 
+unsigned char old_input = 0;
+
 inline char read_input() {
-  unsigned char a = 1 * (digitalRead(8) == HIGH)?1:0;
-  unsigned char b = 2 * (digitalRead(9) == HIGH)?1:0;
-  unsigned char c = 4 * (digitalRead(10)== HIGH)?1:0;
+  unsigned char a = 1 * (analogRead(A0) >= 1023)?1:0;
+  unsigned char b = 2 * (analogRead(A1) >= 1023)?1:0;
+  unsigned char c = 4 * (analogRead(A2) >= 1023)?1:0;
   unsigned char res = a+b+c;
-  if (res > 8) return 0;
-  return res;
+  if (old_input == res) {
+    old_input = res;
+    return res;
+  } 
+  else {
+    old_input = res;
+    return old_input;
+  }
 }
 
 void loop() {
+  Serial.println(freeMemory());
   char animacion_nueva = read_input();
   if (animacion_actual !=  animacion_nueva) {
     animacion_actual = animacion_nueva;
-    load_new_animation(pgm_read_byte_near(lista_animaciones[animacion_nueva]));
-  }
+    load_new_animation(lista_animaciones[animacion_nueva]);
+  }else {
+    // Renderizamos los frames
+    if (actual_frame == n_frames) {
+      actual_frame = 0;
+      last = 1 + n_frames;
+    }
   
-  // Renderizamos los frames
-  if (actual_frame == n_frames) {
-    actual_frame = 0;
-    last = 1 + n_frames;
-  }
-  
-  for (int j = 0; j < lista_cambios[actual_frame]; j++) {
+    for (int j = 0; j < lista_cambios[actual_frame]; j++) {
    unsigned char color = pgm_read_byte_near(animacion + last + 2);
    myGLCD.setColor(color, color, color);
    myGLCD.fillRoundRect(pgm_read_byte_near(animacion + last + 1) * 10,
@@ -80,8 +100,10 @@ void loop() {
      pgm_read_byte_near(animacion + last) * 10 + 10);
    last += 3;
   }
-  
   actual_frame++;
   
   delay(20);
+  }
+  
+  
 }
