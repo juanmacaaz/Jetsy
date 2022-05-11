@@ -38,6 +38,9 @@ void setup() {
 
   // Animaciones
   Serial.begin(9600);
+
+  pinMode(8, INPUT);
+  
   // Preparando pantalla
   myGLCD.InitLCD();
   myGLCD.clrScr();
@@ -51,7 +54,7 @@ void setup() {
 
 inline void load_new_animation(unsigned char* newAnimation) {
   myGLCD.clrScr();
-  free(animacion);
+  //free(animacion);
   animacion = newAnimation;
   n_frames = pgm_read_byte_near(animacion);
   for (int i = 0; i < n_frames; i++) {
@@ -63,27 +66,22 @@ inline void load_new_animation(unsigned char* newAnimation) {
 
 unsigned char old_input = 0;
 
-inline char read_input() {
-  unsigned char a = 1 * (analogRead(A0) >= 1023)?1:0;
-  unsigned char b = 2 * (analogRead(A1) >= 1023)?1:0;
-  unsigned char c = 4 * (analogRead(A2) >= 1023)?1:0;
+inline unsigned char read_input() {
+  unsigned char a = 1 * (digitalRead(8)  == HIGH)?1:0;
+  unsigned char b = 2 * (digitalRead(9)  == HIGH)?0:0;
+  unsigned char c = 4 * (digitalRead(10) == HIGH)?0:0;
   unsigned char res = a+b+c;
-  if (old_input == res) {
-    old_input = res;
-    return res;
-  } 
-  else {
-    old_input = res;
-    return old_input;
-  }
+  Serial.println(res);
+  return res;
 }
 
 void loop() {
   Serial.println(freeMemory());
-  char animacion_nueva = read_input();
+  unsigned char animacion_nueva = read_input();
   if (animacion_actual !=  animacion_nueva) {
-    animacion_actual = animacion_nueva;
+    
     load_new_animation(lista_animaciones[animacion_nueva]);
+    animacion_actual = animacion_nueva;
   }else {
     // Renderizamos los frames
     if (actual_frame == n_frames) {
