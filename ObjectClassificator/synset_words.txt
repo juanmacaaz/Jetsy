@@ -1,5 +1,5 @@
-n01440764 tench, Tinca tinca
-n01443537 goldfish, Carassius auratus
+n01440764 tenca
+n01443537 pez dorado
 n01484850 great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias
 n01491361 tiger shark, Galeocerdo cuvieri
 n01494475 hammerhead, hammerhead shark
@@ -283,7 +283,7 @@ n02123045 tabby, tabby cat
 n02123159 tiger cat
 n02123394 Persian cat
 n02123597 Siamese cat, Siamese
-n02124075 Egyptian cat
+n02124075 gato egipcio
 n02125311 cougar, puma, catamount, mountain lion, painter, panther, Felis concolor
 n02127052 lynx, catamount
 n02128385 leopard, Panthera pardus
