@@ -267,22 +267,22 @@ n02113624 toy poodle
 n02113712 miniature poodle
 n02113799 standard poodle
 n02113978 Mexican hairless
-n02114367 timber wolf, grey wolf, gray wolf, Canis lupus
-n02114548 white wolf, Arctic wolf, Canis lupus tundrarum
-n02114712 red wolf, maned wolf, Canis rufus, Canis niger
-n02114855 coyote, prairie wolf, brush wolf, Canis latrans
-n02115641 dingo, warrigal, warragal, Canis dingo
-n02115913 dhole, Cuon alpinus
-n02116738 African hunting dog, hyena dog, Cape hunting dog, Lycaon pictus
-n02117135 hyena, hyaena
-n02119022 red fox, Vulpes vulpes
-n02119789 kit fox, Vulpes macrotis
-n02120079 Arctic fox, white fox, Alopex lagopus
-n02120505 grey fox, gray fox, Urocyon cinereoargenteus
-n02123045 tabby, tabby cat
-n02123159 tiger cat
-n02123394 Persian cat
-n02123597 Siamese cat, Siamese
+n02114367 lobo
+n02114548 lobo blanco
+n02114712 lobo
+n02114855 coyote
+n02115641 dingo
+n02115913 dhole
+n02116738 African hunting dog
+n02117135 hiena
+n02119022 zorro rojo
+n02119789 zorro del desierto
+n02120079 zorro ártico
+n02120505 zorro
+n02123045 gato
+n02123159 gato
+n02123394 gato persa
+n02123597 gato siamés
 n02124075 gato egipcio
 n02125311 cougar, puma, catamount, mountain lion, painter, panther, Felis concolor
 n02127052 lynx, catamount
