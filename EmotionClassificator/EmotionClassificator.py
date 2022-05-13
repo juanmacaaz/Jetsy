@@ -15,7 +15,4 @@ class EmotionClassificator:
         return frase
 
 
-img = cv2.imread("juan.png")
-a = EmotionClassificator()
-print(a.classificar(img))
 
