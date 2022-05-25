@@ -14,7 +14,7 @@ CHUNK_SIZE_PLAY = 1024
 FORMAT = pyaudio.paInt16
 RATE = 44100
 MAXIMUM = 16384
-THRESHOLD = 1800
+THRESHOLD = 3500 #1800
 
 def is_silent(snd_data):
     return max(snd_data) < THRESHOLD
@@ -74,6 +74,7 @@ def record():
     while 1:
         # little endian, signed short
         snd_data = array('h', stream.read(CHUNK_SIZE))
+        #print(snd_data)
         if byteorder == 'big':
             snd_data.byteswap()
         r.extend(snd_data)
@@ -88,7 +89,7 @@ def record():
         elif not silent and not snd_started:
             snd_started = True
 
-        if snd_started and num_silent > 90:
+        if snd_started and num_silent > 30:
             break
 
     sample_width = p.get_sample_size(FORMAT)

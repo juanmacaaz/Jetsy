@@ -11,3 +11,15 @@ class State:
         self.state_machine.state = state
 
     def run(self, kwargs): pass
+
+
+    # Audio
+    def get_audio_data(self):
+        return self.state_machine.global_data['audio']
+
+    def reset_audio_data(self):
+        self.state_machine.global_data['audio'] = None
+
+    # Sensors
+
+    # Video

@@ -2,6 +2,7 @@ from states.State import State
 
 class S1(State):
     def run(self, kwargs):
+        self.state_machine.global_data['audio'] = None
         kwargs = {}
         kwargs['it'] = 0
         print(f"S1")
@@ -10,9 +11,9 @@ class S1(State):
 
 class S2(State):
     def run(self, kwargs):
-        kwargs['it'] += 1
-        self.go_to("S3", kwargs)
-
+        print('S2')
+        self.go_to("S2", kwargs)
+        
 
 class S3(State):
     def run(self, kwargs):

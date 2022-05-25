@@ -11,8 +11,21 @@ class EmotionClassificator:
         emo_detector = FER(mtcnn=True)
         captured_emotions = emo_detector.detect_emotions(img)
         dominant_emotion, emotion_score = emo_detector.top_emotion(img)
-        frase = "Escaneando resultados. Te ves " + str(self.emociones[dominant_emotion])
-        return frase
+        if dominant_emotion is None:
+            return None
+        return self.emociones[dominant_emotion]
+    
 
-
+if __name__ == '__main__':
+    cap = cv2.VideoCapture(0)
+    emociones = EmotionClassificator()
+    while True:
+        ret, frame = cap.read()
+        cv2.imshow("Video", frame)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+        emocion = emociones.classificar(frame)
+        print(emocion)
+    cap.release()
+    cv2.destroyAllWindows()
 

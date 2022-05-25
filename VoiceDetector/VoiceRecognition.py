@@ -1,9 +1,13 @@
 import pyaudio
+import time
 
 import torch
 from glob import glob
 
 from VoiceDetector.auxiliar import *
+from VoiceDetector.StringMaching import *
+
+demo = [2, 2, 2, -1, 2, 2, 2, -1, 3, 3, 3, -1]
 
 def process_audio(last_output):
     CHUNK_SIZE = 1024
@@ -22,14 +26,18 @@ def process_audio(last_output):
     (read_batch, split_into_batches,
     read_audio, prepare_model_input) = utils
 
+    indice = 0
+
     while True:
-        print("Háblale al micrófono")
-        record_to_file('tmp.wav')
-        print("Grabado! Escrcito a tmp.wav")
+        #print("Háblale al micrófono")
+        #record_to_file('tmp.wav')
+        #print("Grabado! Escrcito a tmp.wav")
         test_files = glob('tmp.wav')
-        batches = split_into_batches(test_files, batch_size=10)
-        input = prepare_model_input(read_batch(batches[0]),
-                                    device=device)
-        output = model(input)
-        
-        last_output[0] = decoder(output[0].cpu())
+        #batches = split_into_batches(test_files, batch_size=10)
+        #input = prepare_model_input(read_batch(batches[0]),
+        #                            device=device)
+        #output = model(input)
+
+        last_output['audio'] = demo[indice%len(demo)]#etiqueta_frase(decoder(output[0].cpu()))
+        indice += 1
+        time.sleep(1)
