@@ -58,7 +58,7 @@ class StateMachine:
         
         manager = Manager()
         self.global_data = manager.dict()
-        self.global_data['audio'] = None
+        self.global_data['audio'] = 0
         self.global_data['video'] = None
 
         p = Process(target=process_audio, args=(self.global_data,))
@@ -69,12 +69,13 @@ class StateMachine:
 
         while 1:
             # Coger informacion de la voz
-            print(self.global_data['video'])
+            #print(self.global_data['video'])
             if self.global_data['audio'] == -1:
-                self.state = 'S1'
+                self.state = 'Reset'
             # Coger informacion del video
             
             # Coger informacion de los sensores
             # Ejecutar el estado actual
+            print(self.state)
             self.states[self.state].run(self.kwargs)
             time.sleep(0.5)

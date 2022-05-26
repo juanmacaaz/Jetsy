@@ -1,20 +1,20 @@
 from fuzzywuzzy import fuzz
 
 FRASES = [
-    ("hola detecta objeto", 0),
-    ("hola detecta emocion", 1),
-    ("hola gira derecha", 2),
+    ("hola detecta objeto", 1),
+    ("hola detecta emocion", 2),
+    ("hola gira derecha", 4),
     ("hola gira izquierda", 3),
     ("hola hora",4),
-    ("hola ponte contenta",5),
+    ("hola ponte contenta",6),
     ("hola ponte triste",6),
-    ("hola ponte enfadada",7),
-    ("hola ponte asustada",12),
+    ("hola ponte enfadada",8),
+    ("hola ponte asustada",9),
     ("hola ponte enamorada",13),
     ("hola cuentame chiste",8),
-    ("hola gira",9),
+    ("hola gira",11),
     ("hola donde estoy",10),
-    ("hola avanza",11),
+    ("hola avanza",13),
     ("hola para", -1),
 ]
 
@@ -36,8 +36,8 @@ def etiqueta_frase(frase, threshold = 70):
         lista_final.append(max_ratio)
     resultados = [x[0] for x in lista_final if x[1] > threshold]
     if resultados == []:
-        return None
+        return 0
     print(resultados)
     for frase, id in FRASES:
         if all(x in resultados for x in frase.split()): return id
-    return None
+    return 0
