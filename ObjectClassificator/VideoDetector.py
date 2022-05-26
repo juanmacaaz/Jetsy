@@ -8,4 +8,4 @@ def process_video(global_state):
 
     while 1:
         ret, frame = cap.read()
-        global_state['video'] = 'Chimpance'#object_detector.image_classification(frame)[0]
+        global_state['video'] = object_detector.image_classification(frame)

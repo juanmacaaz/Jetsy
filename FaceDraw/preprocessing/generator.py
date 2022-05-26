@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-NOMBRE = 'corazon'
-cap = cv2.VideoCapture(f'{NOMBRE}.mp4')
+NOMBRE = 'feliz'
+cap = cv2.VideoCapture(f'animaciones/{NOMBRE}.mp4')
 
 WINDOW_SIZE = 10
 
@@ -51,7 +51,7 @@ for _ in range(100):
 
 size = len(lista_numero_cambios) + 1 + (len(datos) * 3)
 
-output = "unsigned char " + NOMBRE + "["+str(size)+"] = { "
+output = "unsigned char " + NOMBRE + "[] PROGMEM = { "
 output += str(n_frames) + ", "
 for i in lista_numero_cambios:
     output += str(i) + ", "
