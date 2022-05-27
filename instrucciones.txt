@@ -1,0 +1,19 @@
+Frase	                    ID
+hola detecta objeto	        1
+hola detecta emocion	    2
+hola gira a la derecha	    3
+hola gira a la izquierda	4
+hola hora	                5
+hola ponte {emocion}	    6
+hola ponte enfadado	        7
+hola cuentame chiste	    8
+hola gira	                9
+hola donde estoy	        10
+hola avanza	                11
+hola para	                -1
+	
+Sensor input	
+Caida	                    -2
+Camara oscura	            -3
+
+Operaciones aritmeticas

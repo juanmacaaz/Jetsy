@@ -15,3 +15,5 @@ omegaconf
 PySoundFile [Windows]
 sox [Linux]
 noisereduce
+Levenshtein
+fuzzywuzzy
