@@ -1,0 +1,22 @@
+dc motors
+ENA = 33
+ENB = 11
+IN1 = 35
+IN2 = 37
+IN3 = 31
+IN4 = 29
+----------------------
+servos
+sda = 3
+scl = 5
+---------------------
+sensor
+left = 13
+right = 15
+frontal = 16
+--------------------
+pantalla
+pin1 = 32
+pin2 = 38
+pin3 = 40
+
