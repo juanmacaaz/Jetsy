@@ -77,9 +77,9 @@ inline void load_new_animation(unsigned char* newAnimation) {
 unsigned char old_input = 0;
 
 inline unsigned char read_input() {
-  unsigned char a = (digitalRead(8)  == HIGH)?1:0;
-  unsigned char b = (digitalRead(9)  == HIGH)?1:0;
-  unsigned char c = (digitalRead(10) == HIGH)?1:0;
+  unsigned char a = (analogRead(A8)  > 300)?1:0;
+  unsigned char b = (analogRead(A9)  > 300)?1:0;
+  unsigned char c = (analogRead(A10) > 300)?1:0;
   unsigned char res = a*1+b*2+c*4;
   Serial.println(a);
   Serial.println(b);
@@ -92,7 +92,6 @@ void loop() {
   Serial.println(freeMemory());
   unsigned char animacion_nueva = read_input();
   if (animacion_actual !=  animacion_nueva) {
-    
     load_new_animation(lista_animaciones[animacion_nueva]);
     animacion_actual = animacion_nueva;
   }else {
@@ -100,8 +99,8 @@ void loop() {
     if (actual_frame == n_frames) {
       actual_frame = 0;
       last = 1 + n_frames;
-      load_new_animation(lista_animaciones[0]);
-      animacion_actual = 0;
+      //load_new_animation(lista_animaciones[0]);
+      //animacion_actual = 0;
     }
   
     for (int j = 0; j < lista_cambios[actual_frame]; j++) {
