@@ -6,6 +6,7 @@ from multiprocessing import Process, Manager
 
 from VoiceDetector.VoiceRecognition import process_audio 
 from ObjectClassificator.VideoDetector import process_video
+from VoiceModule.VoiceModule import voice_module
 
 lista_estados_importados = []
 for entry in os.scandir('states'):
@@ -58,8 +59,9 @@ class StateMachine:
         
         manager = Manager()
         self.global_data = manager.dict()
-        self.global_data['audio'] = None
+        self.global_data['audio'] = 0
         self.global_data['video'] = None
+        self.global_data['voice'] = None
 
         p = Process(target=process_audio, args=(self.global_data,))
         p.start()
@@ -67,14 +69,23 @@ class StateMachine:
         p = Process(target=process_video, args=(self.global_data,))
         p.start()
 
+        p = Process(target=voice_module, args=(self.global_data,))
+        p.start()
+
         while 1:
             # Coger informacion de la voz
-            print(self.global_data['video'])
+            #print(self.global_data['video'])
             if self.global_data['audio'] == -1:
-                self.state = 'S1'
+                self.state = 'Reset'
             # Coger informacion del video
             
             # Coger informacion de los sensores
             # Ejecutar el estado actual
+            
+            print(self.state)
+            s = time.time()
             self.states[self.state].run(self.kwargs)
-            time.sleep(0.5)
+            f = time.time() - s
+
+            if f < 0.5:
+                time.sleep(0.5 - f)
