@@ -205,41 +205,119 @@ using pip :
     </td>
 </tr>
 
+<tr>
+
+<td align="center">
+
+[Front cover](https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl)
+</td><td align="center">
+
+[Back cover](https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl)
+</td><td align="center">
+
+[Arms](https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl)
+</td><td align="center">
+
+[Battery Cover](https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl)
+</td></tr>
+
+<tr>
+    <td align="center">
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/frontal.png"></a>
+        <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    </td>
+    <td align="center">
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/back.png" ></a>
+        <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    </td>
+    <td align="center">
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/arms.png" ></a>
+        <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    </td>
+    <td align="center">
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/battery_cover.png" ></a>
+        <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+    </td>
+</tr>
+
 <tr><td colspan="4">
 
 # Eyes
 ## Affirmation
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/affirmation.gif" width="640" alt="affirmation pic">
+
 ## Loved
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/loves.gif" width="640" alt="loves pic">
+
 ## Suspicious
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/suspicius.gif" width="640" alt="suspicius pic">
+
 ## Angry
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/angry.gif" width="640" alt="angry pic">
+
 ## Happy
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/happy.gif" width="640" alt="happy pic">
+
 ## Normal
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/normal.gif" width="640" alt="normal pic">
+
 ## Sad
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
 
 # Arms
 ## Up
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/up.gif" width="640" alt="up pic">
+
 ## Left
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/left.gif" width="640" alt="left pic">
+
 ## Right
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/right.gif" width="640" alt="right pic">
+
 ## Down
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/affirmation.gif" width="640" alt="affirmation pic">
 
 # Moviments
 ## Go
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/go.gif" width="640" alt="go pic">
+
 ## Left
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/left.gif" width="640" alt="left pic">
+
 ## Right
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/right.gif" width="640" alt="right pic">
+
 ## Back
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/back.gif" width="640" alt="back pic">
 
 # Proximity-Sensors
 ## Frontal
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Proximity_Sensors/frontal.gif" width="640" alt="frontal pic">
+
 ## Floor
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Proximity_Sensors/floor.gif" width="640" alt="floor pic">
 
 # Command Voice
 ## Voice Controller
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/voice_controller.gif" width="640" alt="voice_controller pic">
+
 ## Dance
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/dance.gif" width="640" alt="dance pic">
+
 ## Repeat
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/repeat.gif" width="640" alt="repeat pic">
+
 ## Tell me a joke
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/tell_me_a_joke.gif" width="640" alt="tell_me_a_joke pic">
+
 ## Emotion Detection
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/emotion_detection.gif" width="640" alt="emotion_detection pic">
+
 ## Where I am
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/where_i_am.gif" width="640" alt="where_i_am pic">
+
 ## Object Classification
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/object_classification.gif" width="640" alt="object_classification pic">
 
 # License
 This project is under the MIT License - see the [LICENSE](https://github.com/juanmacaaz/Jetsy/blob/main/LICENSE.md) file for details
