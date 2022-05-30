@@ -75,7 +75,28 @@ class FinalDetectionObject(State):
 '''
     Detector emotion sequence
 '''
-
+class InitEmotion(State):
+    def run(self, kwargs):
+        kwargs = {}
+        print(f"Inicializando sequencia detectora de emociones")
+        kwargs['next_state'] = 'DetectionEmotion'
+        kwargs['voice'] = 'Initializing emotion detector sequence'
+        self.go_to("DecirFrase", kwargs)
+    
+class DetectionEmotion(State):
+    def run(self, kwargs):
+        print(f"Detectando emociones")
+        kwargs['emotion_detection'] = self.state_machine.global_data['emotion']
+        self.go_to("DetectionEmotion", kwargs)
+        if kwargs['emotion_detection'] != None:
+            self.go_to("FinalDetectionEmotion", kwargs)
+class FinalDetectionEmotion(State):
+    def run(self, kwargs):
+        print(f"Finalizando sequencia detectora de emociones")
+        print('El objecto detectado es: ', kwargs['emotion_detection'])
+        kwargs['next_state'] = 'Reset'
+        kwargs['voice'] = 'The detected emotion is: ' + str(kwargs['emotion_detection'])
+        self.go_to("DecirFrase", kwargs)
 '''
     Dance sequence
 '''
