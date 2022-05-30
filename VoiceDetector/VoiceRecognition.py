@@ -7,7 +7,7 @@ from glob import glob
 from VoiceDetector.auxiliar import *
 from VoiceDetector.StringMaching import *
 
-demo = [-1, -1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+demo = [2]
 
 def process_audio(last_output):
     CHUNK_SIZE = 1024
@@ -29,16 +29,16 @@ def process_audio(last_output):
     indice = 0
 
     while True:
-        print("Háblale al micrófono")
-        record_to_file('tmp.wav')
-        print("Grabado! Escrcito a tmp.wav")
-        test_files = glob('tmp.wav')
-        batches = split_into_batches(test_files, batch_size=10)
-        input = prepare_model_input(read_batch(batches[0]),
-                                    device=device)
-        output = model(input)
+        #print("Háblale al micrófono")
+        #record_to_file('tmp.wav')
+        #print("Grabado! Escrcito a tmp.wav")
+        #test_files = glob('tmp.wav')
+        #batches = split_into_batches(test_files, batch_size=10)
+        #input = prepare_model_input(read_batch(batches[0]),
+                                    #device=device)
+        #output = model(input)
 
-        last_output['audio'] = etiqueta_frase(decoder(output[0].cpu())) #demo[indice%len(demo)]
+        last_output['audio'] = demo[indice%len(demo)] #etiqueta_frase(decoder(output[0].cpu()))
         indice += 1
         print(last_output['audio'])
-        time.sleep(2)
+        time.sleep(5)

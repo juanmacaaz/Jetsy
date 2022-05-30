@@ -2,18 +2,25 @@ from fer import FER
 import matplotlib.pyplot as plt
 import cv2
 
+from ObjectClassificator.facedetection import detect_face
+
 class EmotionClassificator:
-    def __init__(self):
-        self.emociones = {"angry": "enfadado", "disgust": "disgustado", "fear": "asustado", "happy": "feliz",
-                          "sad": "triste", "surprise": "sorprendido", "neutral": "neutral"}
+    def __init__(self) -> None:
+        self.emo_detector = FER(mtcnn=False)
 
     def classificar(self, img):
-        emo_detector = FER(mtcnn=True)
-        captured_emotions = emo_detector.detect_emotions(img)
-        dominant_emotion, emotion_score = emo_detector.top_emotion(img)
+        faces = detect_face(img)
+        if len(faces) < 1:
+            return 0, None
+        # Draw rectangle around the faces and crop the faces
+        for (x, y, w, h) in faces:
+            img = img[y:y + h, x:x + w]
+        if img.shape[0] == 0 or img.shape[1] == 0:
+            return 0, None
+        dominant_emotion, emotion_score = self.emo_detector.top_emotion(img)
         if dominant_emotion is None:
-            return None
-        return self.emociones[dominant_emotion]
+            return 0, None
+        return len(faces) >= 1 , dominant_emotion
     
 
 if __name__ == '__main__':

@@ -1,21 +1,24 @@
 from fuzzywuzzy import fuzz
 
 FRASES = [
+    # Desencadenante
     ("hola detecta objeto", 1),
     ("hola detecta emocion", 2),
-    ("hola gira derecha", 4),
-    ("hola gira izquierda", 3),
-    ("hola hora",4),
-    ("hola ponte contenta",6),
-    ("hola ponte triste",6),
-    ("hola ponte enfadada",8),
-    ("hola ponte asustada",9),
-    ("hola ponte enamorada",13),
-    ("hola cuentame chiste",8),
-    ("hola gira",11),
-    ("hola donde estoy",10),
-    ("hola avanza",13),
-    ("hola para", -1),
+    ("hola repite", 3),
+    ("hola tel me a joke", 4),
+    ("hola donde estoy", 5),
+
+    # Repite conmigo
+
+    ("derecha", 20),
+    ("izquierda", 21),
+    ("adelante", 22),
+    ("atras", 23),
+    ("brazo izquierdo arriba", 24),
+    ("brazo derecho arriba", 25),
+    ("brazo izquierdo abajo", 26),
+    ("brazo derecho abajo", 27),
+    ("Terminamos", -4)
 ]
 
 def get_all_words(frases):

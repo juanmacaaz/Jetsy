@@ -15,11 +15,24 @@ class State:
 
     # Audio
     def get_audio_data(self):
-        return self.state_machine.global_data['audio']
+        data = self.state_machine.global_data['audio']
+        self.state_machine.global_data['audio'] = None
+        return data
 
     def reset_audio_data(self):
         self.state_machine.global_data['audio'] = None
 
+    # Voice
+
+    def reproduce_msg(self, text):
+        self.state_machine.global_data['voice'] = text
+
+    def end_msg(self):
+        return self.state_machine.global_data['voice'] == None
+
     # Sensors
 
     # Video
+
+    def detecta_cara(self):
+        return self.state_machine.global_data['face']
