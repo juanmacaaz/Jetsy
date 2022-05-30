@@ -1,4 +1,4 @@
-<img src="https://github.com/AtsushiSakai/PythonRobotics/raw/master/icon.png?raw=true" align="right" width="300" alt="header pic"/>
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/jetsy.png" align="right" width="300" alt="header pic"/>
 
 # Jetsy
 ![GitHub_Action_Linux_CI](https://github.com/AtsushiSakai/PythonRobotics/workflows/Linux_CI/badge.svg)
