@@ -223,7 +223,7 @@ using pip :
 
 <tr>
     <td align="center">
-        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/frontal.png"></a>
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Covers/frontal.png"></a>
         <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     </td>
     <td align="center">
