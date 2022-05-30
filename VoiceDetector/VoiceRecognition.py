@@ -7,7 +7,7 @@ from glob import glob
 from VoiceDetector.auxiliar import *
 from VoiceDetector.StringMaching import *
 
-demo = [2]
+demo = [1]
 
 def process_audio(last_output):
     CHUNK_SIZE = 1024
@@ -18,13 +18,13 @@ def process_audio(last_output):
     THRESHOLD = 1800
     LANGUAGE = 'es'
 
-    device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
-    model, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models',
-                                        model='silero_stt',
-                                        language=LANGUAGE, # also available 'de', 'es'
-                                        device=device)
-    (read_batch, split_into_batches,
-    read_audio, prepare_model_input) = utils
+    #device = torch.device('cpu')  # gpu also works, but our models are fast enough for CPU
+    #model, decoder, utils = torch.hub.load(repo_or_dir='snakers4/silero-models',
+    #                                    model='silero_stt',
+    #                                    language=LANGUAGE, # also available 'de', 'es'
+    #                                    device=device)
+    #(read_batch, split_into_batches,
+    #read_audio, prepare_model_input) = utils
 
     indice = 0
 
