@@ -227,15 +227,15 @@ using pip :
         <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo1.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     </td>
     <td align="center">
-        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/back.png" ></a>
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Covers/back.png" ></a>
         <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/cuerpo2.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     </td>
     <td align="center">
-        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/arms.png" ></a>
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Covers/arms.png" ></a>
         <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/brazos.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     </td>
     <td align="center">
-        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Covers/battery_cover.png" ></a>
+        <a href="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl" target="_blank"><img border="0" src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Covers/battery_cover.png" ></a>
         <img src="https://github.com/juanmacaaz/Jetsy/blob/main/HardwareDesign/Models/tapa.stl" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
     </td>
 </tr>
