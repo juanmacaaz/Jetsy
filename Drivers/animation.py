@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-pin1, pin2, pin3 = 26, 27, 28
+pin1, pin2, pin3 = 32, 38, 40
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pin1, GPIO.OUT)
@@ -43,11 +43,6 @@ def animation6():
     GPIO.output(pin2, GPIO.HIGH)
     GPIO.output(pin3, GPIO.HIGH)
 
-def animation7():
-    GPIO.output(pin1, GPIO.HIGH)
-    GPIO.output(pin2, GPIO.HIGH)
-    GPIO.output(pin3, GPIO.HIGH)
-
 while True:
     animation0()
     time.sleep(6)
@@ -62,6 +57,4 @@ while True:
     animation5()
     time.sleep(6)
     animation6()
-    time.sleep(6)
-    animation7()
     time.sleep(6)

@@ -62,6 +62,7 @@ class StateMachine:
         self.global_data['audio'] = 0
         self.global_data['video'] = None
         self.global_data['voice'] = None
+        self.global_data["emotion"] = None
 
         p = Process(target=process_audio, args=(self.global_data,))
         p.start()

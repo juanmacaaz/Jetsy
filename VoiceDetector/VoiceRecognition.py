@@ -7,7 +7,7 @@ from glob import glob
 from VoiceDetector.auxiliar import *
 from VoiceDetector.StringMaching import *
 
-demo = [5]
+demo = [2]
 
 def process_audio(last_output):
     CHUNK_SIZE = 1024
