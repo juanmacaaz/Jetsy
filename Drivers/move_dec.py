@@ -15,25 +15,23 @@ GPIO.setup(A2B, GPIO.OUT)
 
 
 def go():
-	GPIO.output(A1A, GPIO.LOW)
-	GPIO.output(A1B, GPIO.HIGH)
+    GPIO.output(A1A, GPIO.LOW)
+    GPIO.output(A1B, GPIO.HIGH)
 
-	GPIO.output(A2A, GPIO.LOW)
-	GPIO.output(A2B, GPIO.HIGH)
+    GPIO.output(A2A, GPIO.LOW)
+    GPIO.output(A2B, GPIO.HIGH)
 
 def back():
-	GPIO.output(A1A, GPIO.HIGH)
-	GPIO.output(A1B, GPIO.LOW)
+    GPIO.output(A1A, GPIO.HIGH)
+    GPIO.output(A1B, GPIO.LOW)
 	
-	GPIO.output(A2A, GPIO.HIGH)
-	GPIO.output(A2B, GPIO.LOW)
+    GPIO.output(A2A, GPIO.HIGH)
+    GPIO.output(A2B, GPIO.LOW)
 
 
 
 while True:
-	go()
-	time.sleep(5)
-	back()
-	time.sleep(5)
-
-	
+    go()
+    time.sleep(5)
+    back()
+    time.sleep(5)
