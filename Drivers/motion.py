@@ -41,6 +41,12 @@ GPIO.setup(A1B, GPIO.OUT)
 GPIO.setup(A2A, GPIO.OUT)
 GPIO.setup(A2B, GPIO.OUT)
 
+def parar():
+    GPIO.output(A1A, GPIO.LOW)
+    GPIO.output(A1B, GPIO.LOW)
+
+    GPIO.output(A2A, GPIO.LOW)
+    GPIO.output(A2B, GPIO.LOW)
 
 def go():
     GPIO.output(A1A, GPIO.LOW)
@@ -82,10 +88,7 @@ def detectar_caida():
     detect_object_left = GPIO.input(sensor_left)
     detect_object_right = GPIO.input(sensor_right)
 
-    if (detect_object_left or detect_object_right):
-        return True
-    else: 
-        return False
+    return detect_object_left or detect_object_right
 
 # ANIMACIONES
 
@@ -138,7 +141,4 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(frontal_sensor,GPIO.IN)
 def detector_frontal():
     detect_object = GPIO.input(frontal_sensor)
-    if not (detect_object):
-        return False
-    else:
-        return True
+    return detect_object

@@ -7,7 +7,7 @@ from multiprocessing import Process, Manager
 from VoiceDetector.VoiceRecognition import process_audio 
 from ObjectClassificator.VideoDetector import process_video
 from VoiceModule.VoiceModule import voice_module
-
+import Drivers.motion as motion
 lista_estados_importados = []
 for entry in os.scandir('states'):
         if entry.is_file():
@@ -81,6 +81,10 @@ class StateMachine:
             # Coger informacion del video
             
             # Coger informacion de los sensores
+            if motion.detectar_caida():
+                self.state = "Reset"
+            elif motion.detector_frontal():
+                self.state = "Reset"
             # Ejecutar el estado actual
             
             print(self.state)

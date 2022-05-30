@@ -16,6 +16,9 @@ class Reset(State):
         self.state_machine.global_data['audio'] = 0
         self.state_machine.global_data['video'] = 0
         self.go_to('Default', kwargs)
+        kwargs["derecho"] = False
+        kwargs["izquierdo"] = False
+        motion.parar()
 
 """
     DEFAULT STATE
@@ -103,10 +106,56 @@ class FinalDetectionEmotion(State):
 
 class InitDance(State):
     def run(self, kwargs):
-        kwargs = {}
-        kwargs['i'] = 0
-        print(f"Inicializando sequencia detector de objectos")
-        self.go_to("DetectionObject", kwargs)
+        kwargs['i'] = 30
+        print(f"Segundo paso")
+        self.go_to("PrimerPaso", kwargs)
+class PrimerPaso(State):
+    def run(self, kwargs):
+        print(f"Primer paso")
+        motion.girar_derecha()
+        motion.state1()
+        kwargs["i_2"] = 30
+        if kwargs["i"] == 0:
+            self.go_to("Segundo paso")
+        else:
+            kwargs["i"] -= 1
+            self.go_to("PrimerPaso", kwargs)
+
+class SegundoPaso(State):
+    def run(self, kwargs):
+        print(f"Segundo paso")
+        motion.girar_derecha()
+        motion.state2()
+        kwargs["i"] = 30
+        if kwargs["i_2"] == 0:
+            self.go_to("TercerPaso")
+        else:
+            kwargs["i_2"] -= 1
+            self.go_to("SegundoPaso", kwargs)
+
+class TercerPaso(State):
+    def run(self, kwargs):
+        print(f"Tercer paso")
+        motion.parar()
+        motion.state3()
+        kwargs["i_2"] = 30
+        if kwargs["i"] == 0:
+            self.go_to("CuartoPaso")
+        else:
+            kwargs["i"] -= 1
+            self.go_to("TercerPaso", kwargs)
+
+class CuartoPaso(State):
+    def run(self, kwargs):
+        print(f"Cuarto paso")
+        motion.state0()
+        if kwargs["i_2"] == 0:
+            kwargs['next_state'] = 'Reset'
+            kwargs['voice'] = 'Dance compleated'
+            self.go_to("DecirFrase", kwargs)
+        else:
+            kwargs["i_2"] -= 1
+            self.go_to("CuartoPaso", kwargs)
 
 class LevantaBrazoDerecho(State):
     def run(self, kwargs):
@@ -195,7 +244,6 @@ class RepiteEjecutaInstruccion(State):
         else:
             self.go_to("Reset", kwargs)
             
-        
 class RepiteDerecha(State):
     def run(self,kwargs):
         motion.girar_derecha()
@@ -203,6 +251,7 @@ class RepiteDerecha(State):
             self.go_to("RepiteDerecha", kwargs)
             kwargs["it"] -= 1
         else:
+            motion.parar()
             self.go_to("RepiteEjecutaInstruccion", kwargs)
 
         
@@ -213,6 +262,7 @@ class RepiteIzquierda(State):
             self.go_to("RepiteIzquierda", kwargs)
             kwargs["it"] -= 1
         else:
+            motion.parar()
             self.go_to("RepiteEjecutaInstruccion", kwargs)
 
         
@@ -224,6 +274,7 @@ class RepiteAdelante(State):
             self.go_to("RepiteAdelante", kwargs)
             kwargs["it"] -= 1
         else:
+            motion.parar()
             self.go_to("RepiteEjecutaInstruccion", kwargs)
 
         
@@ -235,25 +286,66 @@ class RepiteAtras(State):
             self.go_to("RepiteAtras", kwargs)
             kwargs["it"] -= 1
         else:
+            motion.parar()
             self.go_to("RepiteEjecutaInstruccion", kwargs)
+
 class RepiteBrazoIzquierdoArriba(State):
     def run(self,kwargs):
         print("levantando brazo izquierdo")
-        motion.back()
+        if kwargs["derecho"]:
+            motion.state3()
+        else:
+            motion.state1()
         if kwargs["it"] != 0:
             self.go_to("RepiteBrazoIzquierdoArriba", kwargs)
             kwargs["it"] -= 1
         else:
             self.go_to("RepiteEjecutaInstruccion", kwargs)
+class RepiteBrazoDerechoArriba(State):
+    def run(self,kwargs):
+        print("levantando brazo derecha")
+        if kwargs["izquierdo"]:
+            motion.state3()
+        else:
+            motion.state2()
+        if kwargs["it"] != 0:
+            self.go_to("RepiteBrazoDerechoArriba", kwargs)
+            kwargs["it"] -= 1
+        else:
+            self.go_to("RepiteEjecutaInstruccion", kwargs)
+
+class RepiteBrazoIzquierdoAbajo(State):
+    def run(self,kwargs):
+        print("bajando brazo izquierdo")
+        if kwargs["derecho"]:
+            motion.state2()
+        else:
+            motion.state0()
+        if kwargs["it"] != 0:
+            self.go_to("RepiteBrazoDerechoArriba", kwargs)
+            kwargs["it"] -= 1
+        else:
+            self.go_to("RepiteEjecutaInstruccion", kwargs)
+
+class RepiteBrazoDerechoAbajo(State):
+    def run(self,kwargs):
+        print("bajando brazo izquierdo")
+        if kwargs["izquierdo"]:
+            motion.state1()
+        else:
+            motion.state0()
+        if kwargs["it"] != 0:
+            self.go_to("RepiteBrazoDerechoAbajo", kwargs)
+            kwargs["it"] -= 1
+        else:
+            self.go_to("RepiteEjecutaInstruccion", kwargs)
+
 '''
     Tel me a joke
 '''
 
 class InitJoke(State):
     jokes = [
-        "Miguel gay",
-        "Miguel's mom",
-        "The fuking Miguel",
         '''
     What did one traffic light say to the other? Stop looking at me, I'm changing! 
         '''
