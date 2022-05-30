@@ -21,10 +21,10 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Normal](#normal)
       * [Sad](#sad)
    * [Arms](#arms)
-      * [Up](#gaussian-grid-map)
-      * [Left](#ray-casting-grid-map)
-      * [Right](#lidar-to-grid-map)
-      * [Down](#k-means-object-clustering)
+      * [Up](#up)
+      * [Left](#left)
+      * [Right](#right)
+      * [Down](#down)
    * [Movements](#moviments)
       * [Go](#Go)
       * [Left](#Left)
@@ -37,7 +37,7 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Voice Controller](#voice-controller)
       * [Dance](#dance)
       * [Repeat](#repeat)
-      * [Tell me a joke](#temm-me-a-joke)
+      * [Tell me a joke](#tell-me-a-joke)
       * [Emotion Detection](#emotional-detection)
       * [Where I am](#where-i-am)
       * [Object Classification](#object-classification)
@@ -228,7 +228,7 @@ using pip :
 ## Right
 ## Back
 
-# Proximity Sensors
+# Proximity-Sensors
 ## Frontal
 ## Floor
 
