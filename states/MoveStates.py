@@ -198,7 +198,7 @@ class RepiteEjecutaInstruccion(State):
         
 class RepiteDerecha(State):
     def run(self,kwargs):
-        print("girando derecha")
+        motion.girar_derecha()
         if kwargs["it"] != 0:
             self.go_to("RepiteDerecha", kwargs)
             kwargs["it"] -= 1
@@ -208,7 +208,7 @@ class RepiteDerecha(State):
         
 class RepiteIzquierda(State):
     def run(self,kwargs):
-        print("girando izquierda")
+        motion.girar_izquierda()
         if kwargs["it"] != 0:
             self.go_to("RepiteIzquierda", kwargs)
             kwargs["it"] -= 1
@@ -219,6 +219,7 @@ class RepiteIzquierda(State):
 class RepiteAdelante(State):
     def run(self,kwargs):
         print("Yendo Recto")
+        motion.go()
         if kwargs["it"] != 0:
             self.go_to("RepiteAdelante", kwargs)
             kwargs["it"] -= 1
@@ -229,13 +230,21 @@ class RepiteAdelante(State):
 class RepiteAtras(State):
     def run(self,kwargs):
         print("tirando hacia atras")
+        motion.back()
         if kwargs["it"] != 0:
             self.go_to("RepiteAtras", kwargs)
             kwargs["it"] -= 1
         else:
             self.go_to("RepiteEjecutaInstruccion", kwargs)
-
-    
+class RepiteBrazoIzquierdoArriba(State):
+    def run(self,kwargs):
+        print("levantando brazo izquierdo")
+        motion.back()
+        if kwargs["it"] != 0:
+            self.go_to("RepiteBrazoIzquierdoArriba", kwargs)
+            kwargs["it"] -= 1
+        else:
+            self.go_to("RepiteEjecutaInstruccion", kwargs)
 '''
     Tel me a joke
 '''
