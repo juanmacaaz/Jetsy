@@ -288,7 +288,7 @@ using pip :
 ## Back
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Moviments/back.gif" width="640" alt="back pic">
 
-# Proximity-Sensors
+# Proximity Sensors
 ## Frontal
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Proximity_Sensors/sensor.gif" width="640" alt="sensor pic">
 
