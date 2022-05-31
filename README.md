@@ -261,7 +261,7 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
 
 # Arms
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
 
 
 # Moviments
@@ -289,8 +289,7 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/voice_controller.gif" width="640" alt="voice_controller pic">
 
 ## Dance
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/dance.gif" width="640" alt="dance pic">
-
+<video src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Command_voice/dance.mp4" width=180 />
 ## Repeat
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/repeat.gif" width="640" alt="repeat pic">
 
