@@ -9,6 +9,7 @@ Personal assistant robot that interacts with the human being on a physical and e
 
 # Table of Contents
    * [What is this?](#what-is-this)
+   * [Demo](#demo)
    * [Requirements](#requirements)
    * [How to use](#how-to-use)
    * [Components](#components)
@@ -24,14 +25,12 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Normal](#normal)
       * [Sad](#sad)
    * [Arms](#arms)
-   * [Movements](#moviments)
+   * [Movements](#movements)
       * [Front](#Front)
       * [Left](#Left)
       * [Right](#Right)
       * [Back](#Back)
    * [Proximity Sensors](#proximity-sensors)
-      * [Frontal](#frontal-proximity-sensors)
-      * [Floor](#floor-proximity-sensors)
    * [Command Voice](#command-voice)
       * [Voice Controller](#voice-controller)
       * [Dance](#dance)
@@ -54,6 +53,9 @@ This project seeks to create an autonomous robot completely focused on emotional
 We also believe that the aesthetic design of the robot is very important to be able to transmit emotions to the user, so it will be very well worked.
 
 Another point that we want is that all software has to be open source, from deep learning models to used libraries. You do not need an internet connection to use most of its features.
+
+# Demo
+[![Demo](https://img.youtube.com/vi/N_IYzQ1feL4/0.jpg)](https://www.youtube.com/watch?v=N_IYzQ1feL4)
 
 # Requirements
 
@@ -273,7 +275,7 @@ using pip :
 # Arms
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
 
-# Moviments
+# Movements
 ## Front
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/front.gif" width="640" alt="go pic">
 
@@ -288,10 +290,7 @@ using pip :
 
 # Proximity-Sensors
 ## Frontal
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Proximity_Sensors/frontal.gif" width="640" alt="frontal pic">
-
-## Floor
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Proximity_Sensors/floor.gif" width="640" alt="floor pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Proximity_Sensors/sensor.gif" width="640" alt="sensor pic">
 
 # Command Voice
 ## Voice Controller
