@@ -275,16 +275,16 @@ using pip :
 
 # Moviments
 ## Front
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/front.gif" width="640" alt="go pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Moviments/front.gif" width="640" alt="go pic">
 
 ## Left
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/left.gif" width="640" alt="left pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Moviments/left.gif" width="640" alt="left pic">
 
 ## Right
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/right.gif" width="640" alt="right pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Moviments/right.gif" width="640" alt="right pic">
 
 ## Back
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/back.gif" width="640" alt="back pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Moviments/back.gif" width="640" alt="back pic">
 
 # Proximity-Sensors
 ## Frontal
