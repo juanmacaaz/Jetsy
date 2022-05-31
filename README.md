@@ -44,13 +44,12 @@ Personal assistant robot that interacts with the human being on a physical and e
    * [Built With](#built-with)
    * [License](#license)
    * [Use-case](#use-case)
-   * [Contribution](#contribution)
+   * [Amazing Contribution](#amazing-contribution)
+   * [How to contribute](#How-to-contribute)
    * [Citing](#citing)
    * [Support](#support)
    * [Authors](#authors)
    * [Bibliography](#bibliography)
-
-
 
 # What is this?
 This project seeks to create an autonomous robot completely focused on emotional interaction with the user. It will be carried out by means of a table assistant with already existing typical functionalities, but thanks to artificial intelligence you will be able to interact with it through voice and video and thus enhance robot-human interaction seeking the maximum fluidity possible.
@@ -332,7 +331,14 @@ This project is under the MIT License - see the [LICENSE](https://github.com/jua
 # Use-Case
 If this project helps your robotics project, please let us know with creating an issue.
 
-# Contribution
+# Amazing Contribution
+- An emotional human-robot interaction never seen before.
+- Table assistant 2.0 equipped with artificial intelligence.
+- An assistant with next-level computer vision. Leaving current trade assistants behind.
+- An easy-to-program framework to add new functionality to the robot.
+- All the code is open-source and does not require the internet to work.
+
+# How to contribute
 Any contribution is welcome!! 
 
 Contact us via [email](mailto:juanma.caaz@gmail.com).
