@@ -261,7 +261,7 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
 
 # Arms
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
 
 
 # Moviments
