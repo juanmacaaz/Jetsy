@@ -41,6 +41,7 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Emotion Detection](#emotional-detection)
       * [Where I am](#where-i-am)
       * [Object Classification](#object-classification)
+   * [Built With](#built-with)
    * [License](#license)
    * [Use-case](#use-case)
    * [Contribution](#contribution)
@@ -319,6 +320,12 @@ using pip :
 ## Object Classification
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/object_classification.gif" width="640" alt="object_classification pic">
 
+# Built With
+- [TinkerCard](https://www.tinkercad.com/) - Model Design Program.
+- [Arduino](https://www.arduino.cc/) - IDE used for the development of the servos.
+- [VSCode](https://code.visualstudio.com/) - Code editor to program hardware components.
+- [Python](https://www.python.org/) - Language used for programming.
+- [Adoble Suit](https://www.adobe.com/) - For visual content creation.
 # License
 This project is under the MIT License - see the [LICENSE](https://github.com/juanmacaaz/Jetsy/blob/main/LICENSE.md) file for details
 
