@@ -244,7 +244,7 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/loved.gif" width="640" alt="loves pic">
 
 ## Suspicious
-<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/suspicius.gif" width="640" alt="suspicius pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/suspicious.gif" width="640" alt="suspicius pic">
 
 ## Angry
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/angry.gif" width="640" alt="angry pic">
