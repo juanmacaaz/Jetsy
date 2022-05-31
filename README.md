@@ -328,7 +328,64 @@ If this project helps your robotics project, please let us know with creating an
 - All the code is open-source and does not require the internet to work.
 
 # How to contribute
-Any contribution is welcome!! 
+## New estates
+In order to create new states you can follow these steps:
+1. Adds the initial state of the new functionality in the Default state, this is found in ```state/StateMove.py```.
+  
+```
+  class Default(State):
+    next_states = {
+        -1: 'Default',
+        0: 'Default',
+        1: 'InitObject',
+        2: 'InitEmotion',
+        3: 'InitRepite',
+        4: 'InitJoke',
+        5: 'InitWhereAmI'
+        6: 'Ejemplo1'
+    }
+
+    def run(self, kwargs):
+        #self.state_machine.global_data['audio'] = None
+        audio_state = self.state_machine.global_data['audio']
+        kwargs = {}
+        self.go_to(self.next_states[audio_state], kwargs)
+```
+  
+2. Create a new voice instruction in ```VoiceDetector/StringMaching.py``` inside list FRASES.
+  
+```
+ FRASES = [
+    ("hola detecta objeto", 1),
+    ...
+    ("hola, esto es un ejemplo", 6)
+  ]
+```
+  
+Note: that the second value of the tuple corresponds to the identifier of the new state created in step 1.
+  
+3. You can now create the different states necessary to carry out the new functionality:
+  
+```
+class Ejemplo1(State):
+    def run(self, kwargs):
+        kwargs = {}
+        kwargs['variable'] = ‘Vengo del estado uno’
+        print(f"Inicializando sequencia de test")
+        self.go_to("Ejemplo2", kwargs)
+
+class Ejemplo2(State):
+    def run(self, kwargs):
+        kwargs = {}
+        print(f’Mostramos variable {kwargs['variable']}’)
+        print(‘Modificamos variable y creamos otra’)
+        kwargs['variable']  = ‘He pasado por el estado 2’
+        kwargs['variable2'] = ‘He sido creado por el estado 2’
+        print(f"Volvemos al estado 1")
+        self.go_to("Ejemplo1", kwargs)
+ ```
+  
+**Any contribution is welcome!!**
 
 Contact us via [email](mailto:juanma.caaz@gmail.com).
 # Citing
