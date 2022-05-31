@@ -21,10 +21,6 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Normal](#normal)
       * [Sad](#sad)
    * [Arms](#arms)
-      * [Up](#up)
-      * [Left](#left)
-      * [Right](#right)
-      * [Down](#down)
    * [Movements](#moviments)
       * [Go](#Go)
       * [Left](#Left)
@@ -265,17 +261,8 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
 
 # Arms
-## Up
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/up.gif" width="640" alt="up pic">
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
 
-## Left
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/left.gif" width="640" alt="left pic">
-
-## Right
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/right.gif" width="640" alt="right pic">
-
-## Down
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Arms/affirmation.gif" width="640" alt="affirmation pic">
 
 # Moviments
 ## Go
