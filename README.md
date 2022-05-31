@@ -179,7 +179,7 @@ using pip :
 [Power Bank](https://www.amazon.es/Ekrist-26800mAh-Portatil-Powerbank-Cargador/dp/B07TQ43RY2?th=1)
 </td><td align="center">
 
-[Switch On / Off](https://www.carrefour.es/mini-altavoz-innova-wireless-innsoul-alt-37/VC4A-17700772/p?gclid=Cj0KCQjw1tGUBhDXARIsAIJx01n-dVVxX-pnJ5jLpnMJxUPTb12rfhr-3RFtsztOfxjNbZOv8wsuDQgaAm45EALw_wcB&gclsrc=aw.ds)
+[ALT-37](https://www.carrefour.es/mini-altavoz-innova-wireless-innsoul-alt-37/VC4A-17700772/p?gclid=Cj0KCQjw1tGUBhDXARIsAIJx01n-dVVxX-pnJ5jLpnMJxUPTb12rfhr-3RFtsztOfxjNbZOv8wsuDQgaAm45EALw_wcB&gclsrc=aw.ds)
 </td><td align="center">
 
 [USB Microphone](https://www.amazon.es/Micr%C3%B3fono-Seacue-Omnidireccional-Condensador-Entrevistas/dp/B071171DBP/ref=asc_df_B071171DBP/?tag=googshopes-21&linkCode=df0&hvadid=301089040287&hvpos=&hvnetw=g&hvrand=14783442952137543429&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1005424&hvtargid=pla-378893081924&psc=1)
