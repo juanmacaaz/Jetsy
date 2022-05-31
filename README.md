@@ -25,7 +25,7 @@ Personal assistant robot that interacts with the human being on a physical and e
       * [Sad](#sad)
    * [Arms](#arms)
    * [Movements](#moviments)
-      * [Go](#Go)
+      * [Front](#Front)
       * [Left](#Left)
       * [Right](#Right)
       * [Back](#Back)
@@ -273,10 +273,9 @@ using pip :
 # Arms
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
 
-
 # Moviments
-## Go
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/go.gif" width="640" alt="go pic">
+## Front
+<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/front.gif" width="640" alt="go pic">
 
 ## Left
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Moviments/left.gif" width="640" alt="left pic">
@@ -296,7 +295,7 @@ using pip :
 
 # Command Voice
 ## Voice Controller
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/voice_controller.gif" width="640" alt="voice_controller pic">
+[![Voice Controller](https://img.youtube.com/vi/iem644UcZ8E/0.jpg)](https://www.youtube.com/watch?v=iem644UcZ8E)
 
 ## Dance
 [![Dance](https://img.youtube.com/vi/3rkEBKqAFxo/0.jpg)](https://www.youtube.com/watch?v=3rkEBKqAFxo)
