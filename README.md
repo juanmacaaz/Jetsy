@@ -12,6 +12,9 @@ Personal assistant robot that interacts with the human being on a physical and e
    * [Requirements](#requirements)
    * [How to use](#how-to-use)
    * [Components](#components)
+   * [Hardware Scheme](#hardware-scheme)
+   * [Software Architecture](#software-architecture)
+   * [Software Modules](#software-modules)
    * [Eyes](#eyes)
       * [Affirmation](#affirmation)
       * [Loved](#loved)
@@ -235,6 +238,15 @@ using pip :
 </tr>
 
 <tr><td colspan="4">
+
+# Hardware Scheme
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Scheme/hardware.png" width="640" alt="hardware pic">
+
+# Software Architecture
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Scheme/software.png" width="640" alt="software pic">
+
+# Software Modules
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Scheme/software_modules.png" width="640" alt="software modules pic">
 
 # Eyes
 ## Affirmation
