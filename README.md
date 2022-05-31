@@ -347,3 +347,7 @@ If you use this project's code for your academic work or in industry, we'd love 
 * **Christian Ferre** - [christian-ferre](https://github.com/christian-ferre)
 
 # Bibliography
+[Controlar un servo con arduino, Luis Llamas, 2016](https://www.luisllamas.es/controlar-un-servo-con-arduino/)
+[Modulo sensor de llama, Andrés Cortés, 2021](https://acortes.co/proyecto-14-modulo-sensor-de-llama/)
+[Tutorial de uso del modulo l298n, Naylamp Mechatronics, 2017](https://naylampmechatronics.com/blog/11_tutorial-de-uso-del-modulo-l298n.html)
+[CSI Camera, Jetson Hacks Nano, 2019](https://github.com/JetsonHacksNano/CSI-Camera)
