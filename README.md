@@ -32,11 +32,9 @@ Personal assistant robot that interacts with the human being on a physical and e
    * [Command Voice](#command-voice)
       * [Voice Controller](#voice-controller)
       * [Dance](#dance)
-      * [Repeat](#repeat)
       * [Tell me a joke](#tell-me-a-joke)
-      * [Emotion Detection](#emotional-detection)
-      * [Where I am](#where-i-am)
       * [Object Classification](#object-classification)
+   * [Additional Implementations](#additional-implementations)
    * [Built With](#built-with)
    * [License](#license)
    * [Use-case](#use-case)
@@ -240,25 +238,25 @@ using pip :
 
 # Eyes
 ## Affirmation
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/affirmation.gif" width="640" alt="affirmation pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/affirmation.gif" width="640" alt="affirmation pic">
 
 ## Loved
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/loves.gif" width="640" alt="loves pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/loved.gif" width="640" alt="loves pic">
 
 ## Suspicious
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/suspicius.gif" width="640" alt="suspicius pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/suspicius.gif" width="640" alt="suspicius pic">
 
 ## Angry
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/angry.gif" width="640" alt="angry pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/angry.gif" width="640" alt="angry pic">
 
 ## Happy
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/happy.gif" width="640" alt="happy pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/happy.gif" width="640" alt="happy pic">
 
 ## Normal
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/normal.gif" width="640" alt="normal pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/normal.gif" width="640" alt="normal pic">
 
 ## Sad
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
+<img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Eyes/sad.gif" width="640" alt="sad pic">
 
 # Arms
 <img src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Arms/move.gif" width="640" alt="arm move pic">
@@ -289,22 +287,17 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/voice_controller.gif" width="640" alt="voice_controller pic">
 
 ## Dance
-<video src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Command_voice/dance.mp4" width=180 />
-## Repeat
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/repeat.gif" width="640" alt="repeat pic">
+[![Dance](https://img.youtube.com/vi/3rkEBKqAFxo/0.jpg)](https://www.youtube.com/watch?v=3rkEBKqAFxo)
 
 ## Tell me a joke
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/tell_me_a_joke.gif" width="640" alt="tell_me_a_joke pic">
-
-## Emotion Detection
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/emotion_detection.gif" width="640" alt="emotion_detection pic">
-
-## Where I am
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/where_i_am.gif" width="640" alt="where_i_am pic">
+[![tell me a joke](https://img.youtube.com/vi/mcBkq9uVq2E/0.jpg)](https://youtu.be/mcBkq9uVq2E)
 
 ## Object Classification
-<img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/object_classification.gif" width="640" alt="object_classification pic">
+[![object classification](https://img.youtube.com/vi/gnggCI5NF00/0.jpg)](https://www.youtube.com/watch?v=gnggCI5NF00)
 
+# Additional Implementations
+- Where I am
+- Emotion Detection
 # Built With
 - [TinkerCard](https://www.tinkercad.com/) - Model Design Program.
 - [Arduino](https://www.arduino.cc/) - IDE used for the development of the servos.
@@ -332,6 +325,7 @@ Contact us via [email](mailto:juanma.caaz@gmail.com).
 If you use this project's code for your academic work or in industry, we'd love to hear from you as well; feel free to reach out to the developers directly.
 # Support 
 - [Escola d'Enginyeria - UAB Barcelona](https://www.uab.cat/enginyeria/)
+- [UAB Open Labs](https://www.uab.cat/open-labs/)
 # Authors
 * **Juan Manuel Camara** - [juanmacaaz](https://github.com/juanmacaaz)
 * **Miguel del Arco** - [migueldemollet](https://github.com/migueldemollet)
