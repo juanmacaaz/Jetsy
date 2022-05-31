@@ -289,7 +289,7 @@ using pip :
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/voice_controller.gif" width="640" alt="voice_controller pic">
 
 ## Dance
-<video src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Command_voice/dance.mp4" width=180 />
+<video src="https://github.com/juanmacaaz/Jetsy/blob/main/Resources/Command_voice/dance.mp4" width=180> <video/>
 ## Repeat
 <img src="https://github.com/juanmacaaz/Jetsy/tree/main/Resources/command_voice/repeat.gif" width="640" alt="repeat pic">
 
